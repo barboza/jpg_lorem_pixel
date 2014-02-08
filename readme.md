@@ -16,19 +16,19 @@ Getting a random 150x150 .jpg image of people:
 `http://jpg-lorem-pixel.herokuapp.com/peolpe/150/150/`
 
 ###Available categories
-* abstract
-* animals
-* business
-* cats
-* city
-* food
-* nightlife
-* fashion
-* people
-* nature
-* sports
-* technics
-* transport
+* `abstract`
+* `animals`
+* `business`
+* `cats`
+* `city`
+* `food`
+* `nightlife`
+* `fashion `
+* `people `
+* `nature `
+* `sports`
+* `technics`
+* `transport`
 
 ##Setup
 1. Clone de repository
