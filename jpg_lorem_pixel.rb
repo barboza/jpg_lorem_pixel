@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 require 'net/http'
+require 'redcarpet'
+require 'slim'
 
 get '/:type/:x/:y/:format' do
   types = %w{abstract animals business cats city food nightlife fashion people nature sports technics transport}
@@ -27,7 +29,8 @@ get '/:type/:x/:y/:format' do
 end
 
 get '/' do
-  "Congradulations!
-   You're running a Sinatra application on Heroku!"
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :layout_engine => :slim)
+  @content = markdown.render(File.read(File.join('readme.md')))
+  slim :index
 end
 
