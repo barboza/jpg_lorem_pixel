@@ -2,8 +2,13 @@ require 'rubygems'
 require 'sinatra'
 require 'net/http'
 
-get '/image/:x/:y' do
-  uri = URI("http://lorempixel.com/#{params[:x]}/#{params[:y]}/")
+get '/:type/:x/:y/:format' do
+  types = %w{abstract animals business cats city food nightlife fashion people nature sports technics transport}
+  if types.include?(params[:type])
+  uri = URI("http://lorempixel.com/#{params[:x]}/#{params[:y]}/#{params[:type]}/")
+  else
+    uri = URI("http://lorempixel.com/#{params[:x]}/#{params[:y]}/")
+  end
 
   # get only header data
   head = Net::HTTP.start(uri.host, uri.port) do |http|
