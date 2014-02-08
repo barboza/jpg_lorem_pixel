@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'net/http'
-require 'redcarpet'
 require 'slim'
 
 get '/:type/:x/:y/:format' do
@@ -29,8 +28,6 @@ get '/:type/:x/:y/:format' do
 end
 
 get '/' do
-  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :layout_engine => :slim)
-  @content = markdown.render(File.read(File.join('readme.md')))
   slim :index
 end
 
