@@ -1,5 +1,5 @@
 #JPG Lorem Pixel
-This is a simple wrapper to the Lorem Pixel website.
+This is a simple wrapper to the [Lorem Pixel](http://lorempixel.com) website.
 
 Using this, it's possible to get image URLs with the .jpg extension, needed for uploaders such as Carrierwave.
 
