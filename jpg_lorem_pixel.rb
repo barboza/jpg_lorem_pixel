@@ -3,6 +3,7 @@ require 'sinatra'
 require 'net/http'
 require 'slim'
 
+
 get '/:type/:x/:y/:format' do
   types = %w{abstract animals business cats city food nightlife fashion people nature sports technics transport}
   if types.include?(params[:type])
@@ -30,4 +31,3 @@ end
 get '/' do
   slim :index
 end
-
