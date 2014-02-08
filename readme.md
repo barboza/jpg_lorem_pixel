@@ -12,7 +12,7 @@ If `[category]` isn't included in the available categories, it'll return a image
 
 `[anything]` can literally be anything, as it'll have no effect on the request. So if you need the image with a specific fillname, you can call `/image/150/150/filemane.jpg`
 
-Sample URLs
+###Sample URLs
 Getting a random 300x300 image:
 `/image/300/300/`
 
