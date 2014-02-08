@@ -6,14 +6,21 @@ Using this, it's possible to get image URLs with the .jpg extension, needed for 
 A live version is available [here!](http://jpg-lorem-pixel.herokuapp.com)
 
 ##Usage
+Simply use this url to get images: `http://jpg-lorem-pixel.herokuapp.com/[category]/[width]/[height]/[anything]`
+
+If `[category]` isn't included in the available categories, it'll return a image from a random category.
+
+`[anything]` can literally be anything, as it'll have no effect on the request. So if you need the image with a specific fillname, you can call `/image/150/150/filemane.jpg`
+
+Sample URLs
 Getting a random 300x300 image:
-`http://jpg-lorem-pixel.herokuapp.com/image/300/300/`
+`/image/300/300/`
 
 Getting a random 400x250 .jpg image:
-`http://jpg-lorem-pixel.herokuapp.com/image/300/300/.jpg`
+`/image/300/300/.jpg`
 
-Getting a random 150x150 .jpg image of people:
-`http://jpg-lorem-pixel.herokuapp.com/peolpe/150/150/`
+Getting a random 150x150 .jpg image of people with the image named `user_avatar.jpg`:
+`/peolpe/150/150/user_avatar.jpg`
 
 ###Available categories
 * `abstract`
