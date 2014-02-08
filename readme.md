@@ -38,7 +38,7 @@ Getting a random 150x150 .jpg image of people:
 3. Install all the dependencies from Gemfile
 `bundle install`
 4. Run the app
-`ruby jpg_lorem_pixel.rb`
+`shotgun`
 
 ##Contributing
 1. Fork it
