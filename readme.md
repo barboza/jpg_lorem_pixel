@@ -6,7 +6,7 @@ Using this, it's possible to get image URLs with the .jpg extension, needed for 
 A live version is available [here!](http://jpg-lorem-pixel.herokuapp.com)
 
 ##Usage
-Simply use this url to get images: `http://jpg-lorem-pixel.herokuapp.com/[category]/[width]/[height]/[anything]`
+Simply use this path to get images: `/[category]/[width]/[height]/[anything]`
 
 If `[category]` isn't included in the available categories, it'll return a image from a random category.
 
